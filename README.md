@@ -184,17 +184,7 @@ All experiment parameters are in `config.yaml`:
 
 ## Citation
 
-If you use this code in your research, please cite:
-
-```bibtex
-@article{author2026graphrag,
-  title={Schema-Aware Knowledge Graph Retrieval-Augmented Generation for Automated Work-Intake Classification in Enterprise Software Projects},
-  author={Your Name},
-  journal={Information Processing \& Management},
-  year={2026},
-  publisher={Elsevier}
-}
-```
+Paper under review, citation details will be added upon acceptance.
 
 ---
 
