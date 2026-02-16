@@ -86,7 +86,7 @@ graphrag-experiment/
 ### 1. Clone and Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/graphrag-experiment.git
+git clone https://github.com/ashishcoer/graphrag-experiment.git
 cd graphrag-experiment
 python -m venv venv
 
