@@ -1,0 +1,53 @@
+# GraphRAG Experiment Dependencies
+# Install: pip install -r requirements.txt
+
+# PyTorch (install separately for GPU support)
+# CPU: pip install torch torchvision torchaudio
+# CUDA: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# NLP & Embeddings
+transformers==4.44.0
+sentence-transformers==3.0.1
+spacy==3.7.5
+
+# Knowledge Graph
+neo4j==5.23.0
+networkx==3.3
+pyvis==0.3.2
+
+# Retrieval
+faiss-cpu==1.8.0
+rank-bm25==0.2.2
+langchain==0.2.14
+langchain-community==0.2.12
+
+# LLM API Clients
+openai==1.40.0
+tiktoken==0.7.0
+tenacity==8.5.0
+
+# Evaluation & Statistics
+ragas==0.1.14
+scikit-learn==1.5.1
+scipy==1.14.0
+statsmodels==0.14.2
+pingouin==0.5.4
+
+# Data Collection
+PyGithub==2.3.0
+requests==2.32.3
+pandas==2.2.2
+tqdm==4.66.5
+
+# Visualization
+matplotlib==3.9.1
+seaborn==0.13.2
+plotly==5.23.0
+
+# Utilities
+python-dotenv==1.0.1
+pyyaml==6.0.1
+jsonlines==4.0.0

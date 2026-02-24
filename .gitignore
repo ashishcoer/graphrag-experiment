@@ -1,0 +1,57 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ===== Virtual Environment =====
+venv/
+env/
+.venv/
+
+# ===== API Keys & Secrets =====
+.env
+*.env
+.env.local
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Data (too large for GitHub) =====
+data/raw/
+data/processed/
+data/benchmark/
+
+# ===== Neo4j =====
+neo4j-data/
+
+# ===== Generated Results =====
+evaluation/automated/
+evaluation/human/
+results/api_costs.jsonl
+results/stats/
+results/figures/
+
+# ===== Logs =====
+*.log
+collection.log
+data_collection.log
+data_collection_errors.log
+
+# ===== Large Model Files =====
+*.bin
+*.pt
+*.onnx

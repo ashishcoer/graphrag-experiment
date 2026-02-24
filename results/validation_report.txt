@@ -1,0 +1,14 @@
+Validation Report
+Date range: 2022-01-01 to 2024-12-31
+
+Passed: 60  Warnings: 8  Errors: 0
+
+Issues:
+  [WARNING] apache_airflow/issues: 2 records with empty body
+  [WARNING] apache_airflow/prs: 11 records outside date range
+  [WARNING] home-assistant_core/issues: 1 records outside date range
+  [WARNING] home-assistant_core/prs: 28 records outside date range
+  [WARNING] kubernetes_kubernetes/issues: 4 records with empty body
+  [WARNING] kubernetes_kubernetes/issues: 1 records outside date range
+  [WARNING] kubernetes_kubernetes/prs: 13 records outside date range
+  [WARNING] microsoft_vscode/prs: 2 records outside date range

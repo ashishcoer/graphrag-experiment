@@ -1,0 +1,63 @@
+# ===== GraphRAG Experiment Configuration =====
+project:
+  name: "graphrag-work-intake"
+  seed: 42
+ 
+github:
+  repos:
+    - owner: "kubernetes"
+      repo: "kubernetes"
+      max_issues: 5000
+      max_prs: 3500
+    - owner: "microsoft"
+      repo: "vscode"
+      max_issues: 4000
+      max_prs: 2500
+    - owner: "home-assistant"
+      repo: "core"
+      max_issues: 3000
+      max_prs: 2000
+    - owner: "apache"
+      repo: "airflow"
+      max_issues: 2500
+      max_prs: 1500
+  date_range:
+    start: "2022-01-01"
+    end: "2024-12-31"
+ 
+neo4j:
+  uri: "bolt://localhost:7687"
+  user: "neo4j"
+  password: "graphrag2024"
+ 
+models:
+  provider: "openai"
+ 
+  openai:
+    generation_model: "gpt-4o-2024-05-13"
+    mini_model: "gpt-4o-mini-2024-07-18"
+    temperature: 0.2
+    max_tokens: 2048
+    top_p: 0.95
+ 
+  embedding:
+    name: "all-MiniLM-L6-v2"
+    dimension: 384
+ 
+retrieval:
+  seed_k: 10
+  max_hops: 3
+  prune_threshold: 0.35
+  chunk_size: 512
+  chunk_overlap: 50
+  bm25_k1: 1.2
+  bm25_b: 0.75
+  top_k_chunks: 10
+  max_context_tokens: 6000
+ 
+benchmark:
+  total_instances: 1247
+ 
+cost_tracking:
+  enabled: true
+  log_file: "results/api_costs.jsonl"
