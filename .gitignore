@@ -44,6 +44,7 @@ evaluation/human/
 results/api_costs.jsonl
 results/stats/
 results/figures/
+results/paper_data_notes.md
 
 # ===== Logs =====
 *.log
