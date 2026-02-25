@@ -81,10 +81,13 @@ Collection date range: 2022-01-01 to 2024-12-31
 ## Human Evaluation Results
 
 ### Setup
-- 10 annotators: Andre, Derek, James, Keiko, Marcus, Nalini, Preethi, Riya, Simone, Viktor
+- 10 evaluation leads: Andre, Derek, James, Keiko, Marcus, Nalini, Preethi, Riya, Simone, Viktor
+- Each lead coordinated a group of 3–4 practitioners who distributed the 75 instances among themselves
+- Total participants: approximately 30–40 individuals across all groups
 - 75 instances (25 per task type: taxonomy, routing, dependency)
-- Each annotator scored all 75 instances — 750 total preference judgements
+- Each group returned one completed form — 750 total preference judgements across 10 forms
 - Blinded evaluation (System-A/B/C/D, pipeline order randomised per instance, seed=42)
+- NOTE: Evaluator profiles to be added once confirmed by leads (role, experience, industry)
 
 ### Results
 
@@ -100,14 +103,29 @@ Collection date range: 2022-01-01 to 2024-12-31
 
 ### Suggested Paper Wording (Human Evaluation section)
 
-> "Ten evaluators independently assessed all 75 instances in a blinded
-> protocol (system labels anonymised as System-A through System-D, with
-> pipeline order randomised per instance). Evaluators scored each output
-> on relevance, completeness, and coherence (1–5 Likert scale) and
-> indicated their overall preferred system. Across 750 preference
-> judgements, GraphRAG was preferred in 64.5% of cases (484/750),
-> substantially ahead of BM25 (13.5%), Graph-Only (11.1%), and
-> Vector RAG (10.9%). GraphRAG also led on completeness (4.50 vs
-> 3.59/3.40/3.25) and coherence (4.10 vs 3.71/3.34/3.69).
-> Inter-annotator agreement was Fleiss' κ = 0.36 (fair agreement),
-> consistent with the subjective nature of output quality assessment."
+> "Ten evaluation groups, each comprising a lead practitioner and 3–4
+> colleagues (approximately 30–40 participants in total), assessed a
+> stratified sample of 75 instances in a blinded protocol. Instances
+> were distributed among group members, with each group returning a
+> single consolidated evaluation form. System labels were anonymised
+> as System-A through System-D, with pipeline order randomised per
+> instance (seed=42). Evaluators scored each output on relevance,
+> completeness, and coherence (1–5 Likert scale) and indicated their
+> overall preferred system. Across 750 preference judgements, GraphRAG
+> was preferred in 64.5% of cases (484/750), substantially ahead of
+> BM25 (13.5%), Graph-Only (11.1%), and Vector RAG (10.9%). GraphRAG
+> also led on completeness (4.50 vs 3.59/3.40/3.25) and coherence
+> (4.10 vs 3.71/3.34/3.69). Inter-annotator agreement was Fleiss'
+> κ = 0.36 (fair agreement), consistent with the subjective nature
+> of output quality assessment."
+
+### LLM-as-Judge Limitations (for paper Limitations section)
+
+> "The automated LLM-as-judge evaluation used GPT-4o-mini
+> (gpt-4o-mini-2024-07-18), which exhibited ceiling effects
+> (mean scores 4.89–4.99/5 across all pipelines), limiting its
+> discriminative power. This grade inflation is a known limitation
+> of smaller judge models. Human evaluation, which produced a wider
+> score range (3.01–4.50) and clear preference differentiation
+> (10.9%–64.5%), is therefore treated as the primary evidence for
+> the main research question."
