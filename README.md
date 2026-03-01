@@ -4,6 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18819997.svg)](https://doi.org/10.5281/zenodo.18819997)
 
 This repository contains the code, data collection scripts, and evaluation pipeline for reproducing the experiments described in our paper submitted to *Information Processing & Management*.
 
@@ -283,7 +284,19 @@ Full rubric and annotator instructions: [results/appendix_human_eval.md](results
 
 ## Citation
 
-Paper under review. Citation details will be added upon acceptance.
+Paper under review. In the meantime, please cite the replication package:
+
+```bibtex
+@software{graphrag_worktriage_2026,
+  author    = {Garg, Ashish},
+  title     = {GraphRAG for Enterprise Work-Intake Triage: Replication Package},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.18819997},
+  url       = {https://doi.org/10.5281/zenodo.18819997},
+  note      = {ORCID: 0009-0003-4402-9593}
+}
+```
 
 ---
 
